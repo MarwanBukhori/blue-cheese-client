@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <ProductInventory />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ProductInventory from "./components/ProductInventory.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ProductInventory,
+  },
+};
 </script>
 
 <style>
@@ -24,3 +24,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+./components/ProductInventory.vue

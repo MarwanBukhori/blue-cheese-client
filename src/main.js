@@ -1,4 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import axios from 'axios';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+// Add axios to the Vue prototype
+app.config.globalProperties.$http = axios;
+
+// Mount the app to the DOM
+app.mount('#app');
